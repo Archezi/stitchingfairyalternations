@@ -13,7 +13,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 150rem;
-  background-image: url(../images/background/bkg-tile.jpg);
+  background-image: url(../../images/background/bkg-tile.jpg);
   background-repeat: repeat;
   color: #808080;
   margin: 0;
@@ -396,7 +396,7 @@ ul > li {
     text-decoration: none;
     padding-top: 3.8rem;
     background-size: 60px  34px;
-    background-image: url(../images/icons/icon-arrow-top-pink-2x.png);
+    background-image: url(../../images/icons/icon-arrow-top-pink-2x.png);
     background-repeat: no-repeat;
     background-position: top center; }
 
@@ -610,7 +610,7 @@ ul > li {
       font-weight: 400;
       color: #808080; }
   .header__main-page {
-    background: url(../images/mainPage/desktop/top-banner.jpg);
+    background: url(../../images/mainPage/desktop/top-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -639,7 +639,7 @@ ul > li {
       width: 100%; }
     .entry-content h2 span {
       color: #808080;
-      background: url(../images/background/bkg-tile.jpg);
+      background: url(../../images/background/bkg-tile.jpg);
       padding: 0 1rem;
       position: relative;
       z-index: 1; }
