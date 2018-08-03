@@ -596,7 +596,6 @@ ul > li {
 @media only screen and (max-width: 37.5em) {
   .active {
     background-color: #ffffff;
-    margin-top: 2rem !important;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);

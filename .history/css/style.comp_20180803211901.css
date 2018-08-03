@@ -453,7 +453,7 @@ ul > li {
       background: #ffffff;
       position: fixed;
       left: 0;
-      top: 0;
+      top: 1rem;
       width: 100vw;
       max-height: 15vh; } }
   #main-nav #logo {
@@ -596,7 +596,6 @@ ul > li {
 @media only screen and (max-width: 37.5em) {
   .active {
     background-color: #ffffff;
-    margin-top: 2rem !important;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
