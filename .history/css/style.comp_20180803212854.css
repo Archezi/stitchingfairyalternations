@@ -452,13 +452,13 @@ ul > li {
     #main-nav {
       background: #ffffff;
       position: fixed;
-      left: 0vw;
-      top: 0vh;
+      left: 0;
+      top: 0;
       width: 100vw;
       max-height: 15vh; } }
   #main-nav #logo {
     display: flex;
-    /* top: 0vh; */
+    top: 0;
     width: 100%;
     justify-content: center;
     align-content: center; }

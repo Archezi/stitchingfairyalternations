@@ -458,7 +458,7 @@ ul > li {
       max-height: 15vh; } }
   #main-nav #logo {
     display: flex;
-    /* top: 0vh; */
+    top: 0vh;
     width: 100%;
     justify-content: center;
     align-content: center; }
