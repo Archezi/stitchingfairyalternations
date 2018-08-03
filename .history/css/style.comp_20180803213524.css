@@ -17,8 +17,7 @@ html, body {
   color: #808080;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
-  max-width: 100%;
+  overflow: hidden;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html, body {
