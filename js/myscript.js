@@ -22,19 +22,19 @@ $(document).ready(function(){
 
 	});
 
-	$(window).scroll(function(){
+	// $(window).scroll(function(){
 		
-		var wScroll = $(this).scrollTop();
+	// 	var wScroll = $(this).scrollTop();
 
-		// Fixed navigation on large screens 
-		if(wScroll > 135) {
-			$('#navigation__nav').addClass('sticky_top');
-			$('.logo_fixed_nav').css('display','block');
-		} else {
-			$('#navigation__nav').removeClass('sticky_top');
-			$('.logo_fixed_nav').css('display','none');
-		}
-	});
+	// 	// Fixed navigation on large screens 
+	// 	if(wScroll > 135) {
+	// 		$('#navigation__nav').addClass('sticky_top');
+	// 		$('.logo_fixed_nav').css('display','block');
+	// 	} else {
+	// 		$('#navigation__nav').removeClass('sticky_top');
+	// 		$('.logo_fixed_nav').css('display','none');
+	// 	}
+	// });
 
     $('#navigation').on('click', function(e){
 		e.preventDefault();
