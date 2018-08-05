@@ -15,6 +15,7 @@
 html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   background-image: url(../images/background/bkg-tile.jpg);
   background-repeat: repeat;
   color: #808080;
@@ -329,6 +330,9 @@ template {
    */
 [hidden] {
   display: none; }
+
+iframe {
+  border: 0px; }
 
 html, body {
   font-family: 'Roboto', 'BauerBodoniStd', sans-serif;
