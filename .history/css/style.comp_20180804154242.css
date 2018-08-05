@@ -12,12 +12,13 @@
 html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  min-height: 150rem;
-  background-image: url(../../images/background/bkg-tile.jpg);
+  background-image: url(../images/background/bkg-tile.jpg);
   background-repeat: repeat;
   color: #808080;
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
+  max-width: 100%;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html, body {
@@ -384,19 +385,14 @@ ul {
 ul > li {
   list-style: none; }
 
-.underline {
-  text-decoration: underline; }
-
 .alteration-service-wrapper .article_heading,
 .bridal-wrapper .article_heading,
-.occasional-wrapper .article_heading,
-.christening-wrapper .article_heading {
+.occasional-wrapper .article_heading {
   color: #26272d; }
 
 .alteration-service-wrapper .article_subheading,
 .bridal-wrapper .article_subheading,
-.occasional-wrapper .article_subheading,
-.christening-wrapper .article_subheading {
+.occasional-wrapper .article_subheading {
   max-width: 70rem;
   font-size: 2.8rem;
   font-weight: 400;
@@ -405,29 +401,25 @@ ul > li {
 
 .alteration-service-wrapper .article_caption,
 .bridal-wrapper .article_caption,
-.occasional-wrapper .article_caption,
-.christening-wrapper .article_caption {
+.occasional-wrapper .article_caption {
   max-width: 70rem;
   font-size: 1.8rem; }
 
 .alteration-service-wrapper .article_list-title,
 .bridal-wrapper .article_list-title,
-.occasional-wrapper .article_list-title,
-.christening-wrapper .article_list-title {
+.occasional-wrapper .article_list-title {
   font-size: 3.2rem;
   margin: 2rem 0;
   font-family: BauerBodoniStd; }
 
 .alteration-service-wrapper ul,
 .bridal-wrapper ul,
-.occasional-wrapper ul,
-.christening-wrapper ul {
+.occasional-wrapper ul {
   padding-left: 1.5rem; }
 
 .alteration-service-wrapper ul > li,
 .bridal-wrapper ul > li,
-.occasional-wrapper ul > li,
-.christening-wrapper ul > li {
+.occasional-wrapper ul > li {
   padding: 0.5rem 0;
   font-size: 1.6rem;
   list-style-type: disc; }
@@ -444,13 +436,13 @@ ul > li {
     text-decoration: none;
     padding-top: 3.8rem;
     background-size: 60px  34px;
-    background-image: url(../../images/icons/icon-arrow-top-pink-2x.png);
+    background-image: url(../images/icons/icon-arrow-top-pink-2x.png);
     background-repeat: no-repeat;
     background-position: top center; }
 
 #main-nav {
   position: relative;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   font-size: 16px;
   z-index: 999;
@@ -461,28 +453,26 @@ ul > li {
     #main-nav {
       background: #ffffff;
       position: fixed;
-      left: 0;
-      top: 0;
-      max-width: 100vw;
-      overflow: hidden;
+      left: 0vw;
+      top: 0vh;
       width: 100vw;
       max-height: 15vh; } }
   #main-nav #logo {
     display: flex;
-    top: 0;
+    /* top: 0vh; */
+    width: 100%;
     justify-content: center;
-    align-content: start; }
+    align-content: center; }
     #main-nav #logo a {
       display: inline-block; }
     #main-nav #logo img {
-      max-width: 100vw;
+      max-width: 100%;
       display: block;
       padding: 2rem;
-      height: 15vh; }
+      height: 15rem; }
       @media only screen and (max-width: 37.5em) {
         #main-nav #logo img {
           height: 15vh;
-          max-width: 100vw;
           padding: 2rem 0 1rem; } }
   #main-nav #navigation__nav {
     display: flex;
@@ -542,10 +532,10 @@ ul > li {
   #main-nav #slide_out_menu {
     position: fixed;
     display: block;
-    width: 100vw;
-    max-width: 700px;
-    height: 100vh;
-    left: -100vw;
+    width: 300px;
+    max-width: 650px;
+    height: 100%;
+    left: -380px;
     top: 0;
     padding: 3rem;
     z-index: 50;
@@ -584,7 +574,7 @@ ul > li {
       width: 100%;
       left: 0;
       bottom: 0;
-      padding: 2rem 3rem 4rem; }
+      padding: 2rem 2rem 2.5rem; }
       #main-nav #slide_out_menu .slide_out_menu_footer .more-info p {
         font-size: 14px;
         line-height: 24px;
@@ -607,6 +597,7 @@ ul > li {
 @media only screen and (max-width: 37.5em) {
   .active {
     background-color: #ffffff;
+    margin-top: 2rem !important;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
@@ -667,22 +658,21 @@ ul > li {
       font-size: 2.8rem;
       color: #808080; }
   .header__main-page {
-    background: url(../images/banners/main_banner.jpg);
+    background: url(../images/mainPage/desktop/top-banner.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
+    background-size: cover; }
   .header__about-page {
-    background: url(../images/banners/main_banner.jpg);
+    background: url(../images/mainPage/desktop/top-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .header__alterations-page {
-    background: url(../images/banners/main_banner.jpg);
+    background: url(../images/mainPage/desktop/top-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .header__bridal-page {
-    background: url(../images/banners/wedding_dress_banner.jpg);
+    background: url(../images/wedding-dress/wedding-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -690,60 +680,34 @@ ul > li {
       .header__bridal-page {
         background-position: 70% center; } }
   .header__christening-page {
-    background: url(../images/banners/christening_banner.jpg);
+    background: url(../images/christening/christening-banner_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .header__communion-page {
-    background: url(../images/banners/communion_banner.jpg);
+    background: url(../images/communion-dress/communion-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .header__occasional-page {
-    background: url(../images/banners/occasional_dress_banner.jpg);
+    background: url(../images/collection/occasional-dress-banner_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
   .header__contact-page {
-    background: url(../images/banners/main_banner.jpg);
+    background: url(../images/contact/contact-banner_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
 
-#main-service a {
-  display: inline-block;
-  width: 100%;
-  height: 100%; }
-
 #main-service .img-container {
-  background: #424242;
   position: relative;
   overflow: hidden;
   margin-top: 2rem; }
-  #main-service .img-container:hover img {
-    opacity: 1;
-    transform: scale(1.1); }
-  #main-service .img-container:hover .image_text_caption .image_text-heading {
-    color: #ffffff; }
   #main-service .img-container img {
-    opacity: 0.8;
-    scale: 1;
-    display: block;
     bottom: 0;
     left: 0;
-    width: 100%;
-    transition: all 0.5s ease-in-out; }
-  #main-service .img-container .image_text_caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center; }
-    #main-service .img-container .image_text_caption .image_text-heading {
-      color: #ffffff;
-      font-size: 6.2rem;
-      transition: all 0.5s ease-in-out; }
+    width: 100%; }
 
 .entry-content {
   padding: 4rem 0 0; }
@@ -822,10 +786,6 @@ ul > li {
         @media only screen and (max-width: 37.5em) {
           #footer .footer-contact-info .separator {
             display: none; } }
-      #footer .footer-contact-info .link_default {
-        text-decoration: none;
-        cursor: pointer;
-        color: #808080; }
   #footer .legal {
     margin-top: 1rem;
     justify-content: center;
@@ -1022,7 +982,7 @@ ul > li {
       width: 100%;
       height: 100%; }
 
-#communion_dress_collection {
+#communion_dress_collection_girls {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-auto-rows: minmax(15rem, auto);
